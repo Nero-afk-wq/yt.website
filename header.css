@@ -1,0 +1,130 @@
+.header {
+  height: 60px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  position: fixed;
+  top: 0;right: 0;left: 0;
+  background-color: white;
+  border-bottom:1px solid rgb(220, 220, 220) ;
+  z-index: 1 ;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  flex-shrink: 0;
+}
+#im4 {
+  width: 32px;
+  border-radius: 16px;
+  margin-right: 20px;
+} 
+.im {
+  width: 25px;
+  cursor: pointer;
+}
+.middle-section {
+  flex: 1;
+  margin: 0 35px 0 70px;
+  max-width: 470px;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  height: 25px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.yt {
+  height: 20px;
+  cursor: pointer;
+}
+.search-button {
+  height: 22px;
+  width: 40px;
+  padding: 7px 2px 2px ; 
+  cursor: pointer;
+}
+.search {
+  background-color:rgb(241, 240, 240) ;
+  border: 1px solid rgb(183, 183, 183);
+  margin-left: -1px;
+  width: 60px;
+  height: 39px;
+}
+.voice-button {
+  height: 26px;
+  width: 20px;
+  padding-top: 3px;
+  cursor: pointer;
+}
+.voice {
+  padding: 2px 8px  ;
+  margin-left: 10px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(241, 240, 240);
+  width: 35px;
+  height: 35px; 
+}
+input {
+  height: 35px;
+  border: solid 1px rgb(183, 183, 183);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  flex: 1;
+  padding-left: 15px;
+  font-size: 16px;
+  box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1 );
+  width: 0;
+}
+.nb-notif {
+  position: absolute;
+  top: 3px;right: 0;
+  background-color: rgb(204, 3, 3);
+  width: 16px;
+  height: 16px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+  border: 1px solid rgb(173, 1, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+}
+.notif-container {
+  position: relative;
+  padding: 5px;
+}
+.search,.voice ,.notif-container ,.container-right ,.yt-apps {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search .tooltip,.voice .tooltip ,.container-right .tooltip ,.yt-apps .tooltip ,.notif-container .tooltip{
+  position: absolute;
+  top: 45px;
+  background-color: rgba(0, 0, 0, 0.5 );
+  color: white;
+  padding: 8px 5px;
+  border-radius: 3px;
+  font-size: 13px;
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search:hover .tooltip,.voice:hover .tooltip, .container-right:hover .tooltip ,.yt-apps:hover .tooltip, .notif-container:hover .tooltip{
+  opacity: 1;
+}
+
